@@ -13,5 +13,24 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Behaviors\" />
+    <None Remove="Data\" />
+    <None Remove="Helpers\" />
+    <None Remove="Model\" />
+    <None Remove="Services\" />
+    <None Remove="View\" />
+    <None Remove="ViewModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Behaviors\" />
+    <Folder Include="Data\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Model\" />
+    <Folder Include="Services\" />
+    <Folder Include="View\" />
+    <Folder Include="ViewModel\" />
   </ItemGroup>
 </Project>

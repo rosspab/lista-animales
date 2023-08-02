@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="listaAnimales.View.AnimalView">
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal"
+                     VerticalOptions="Center"
+                     Spacing="10">
+            <Image Source="contacto.png" />
+            <Label Text="Nuevo Animal..."
+                   Style="{StaticResource titulo}" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+        <StackLayout Margin="15">
+            <Label Text="Nombre: " 
+                   Style="{StaticResource formLabel}" />
+            <Entry Placeholder="Nombre..."
+                   Text="{Binding nuevoAnimal.Nombre}" />
+
+            <Label Text="Especie: " 
+                   Style="{StaticResource formLabel}" />
+            <Entry Placeholder="Toro"
+                   Text="{Binding nuevoAnimakl.Especie}" />
+
+            <Label Text="Ubicación: " 
+                   Style="{StaticResource formLabel}" />
+            <Entry Placeholder="España"
+                   Text="{Binding nuevoAnimal.Ubicacion}" />
+
+            <Label Text="Imagen: " 
+                   Style="{StaticResource formLabel}" />
+            <Entry Placeholder="url"
+                   Text="{Binding nuevoAnimal.Imagen}" />
+
+            <Button Text="Guardar"
+                    Style="{StaticResource btnPrimary}"
+                    Command="{Binding salvarAnimalCommand}" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

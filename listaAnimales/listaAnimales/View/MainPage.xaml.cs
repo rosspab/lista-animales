@@ -1,4 +1,5 @@
-﻿using System;
+﻿using listaAnimales.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -13,6 +14,12 @@ namespace listaAnimales
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            this.BindingContext = new MainPageViewModel(Navigation);
         }
     }
 }

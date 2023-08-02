@@ -3,6 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="listaAnimales.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="titulo"
+                   TargetType="Label">
+                <Setter Property="TextColor" Value="#FFFFFF" />
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
 
+            <Style x:Key="subTitulo"
+                   TargetType="Label">
+                <Setter Property="TextColor" Value="#2b77ff" />
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="Margin" Value="20" />
+            </Style>
+
+            <Style x:Key="formLabel"
+                   TargetType="Label">
+                <Setter Property="TextColor" Value="#2b77ff" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+
+            <Style x:Key="footerLabel"
+                   TargetType="Label">
+                <Setter Property="TextColor" Value="#2b77ff" />
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="Margin" Value="20" />
+                
+            </Style>
+
+            <Style x:Key="btnPrimary"
+                   TargetType="Button">
+                <Setter Property="HeightRequest" Value="60" />
+                <Setter Property="WidthRequest" Value="250" /> 
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="#2b77ff" />
+                <Setter Property="BorderWidth" Value="4" />
+                <Setter Property="BorderColor" Value="#b3cfff" />
+                <Setter Property="CornerRadius" Value="60" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
